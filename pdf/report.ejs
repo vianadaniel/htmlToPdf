@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <style>
+      <%- include('./styles.css') %>
+    </style>
+    <title>Apuration PDF</title>
+  </head>
+  <body>
+    <section>
+        <div class="d-flex align-center justify-around">
+            <p><b>Perfil Fiscal</b>:&nbsp;Seidor Brasil</p>
+            <p><b>Estabelecimento</b>:&nbsp;Seidor Veritas</p>
+        </div>
+        <div class="d-flex align-center justify-around mb-6">
+            <p><b>Data Inicial da Apuração</b>:&nbsp;11/02/2020</p>
+            <p><b>Data Final da Apuração</b>:&nbsp;11/02/2020</p>
+            <p><b>Tipo de Imposto</b>:&nbsp;ICMS</p>
+        </div>
+    </section>
+    <section>
+      <p class="text-center mb-0"><b>Entradas</b></p>
+      <table class="margin-auto">
+        <thead>
+          <tr>
+            <td><b>CFOP</b></td>
+            <td><b>Descrição do CFOP</b></td>
+            <td><b>CST</b></td>
+            <td><b>Valores Contábeis</b></td>
+            <td><b>Base de Cálculo</b></td>
+            <td><b>Valores do Imposto</b></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1101</td>
+            <td>Compra para industrialização ou produção rural</td>
+            <td>00</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+          </tr>
+          <tr>
+            <td colspan="3">TOTAIS</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <p class="text-center mb-0"><b>Saídas</b></p>
+      <table class="margin-auto">
+        <thead>
+          <tr>
+            <td><b>CFOP</b></td>
+            <td><b>Descrição do CFOP</b></td>
+            <td><b>CST</b></td>
+            <td><b>Valores Contábeis</b></td>
+            <td><b>Base de Cálculo</b></td>
+            <td><b>Valores do Imposto</b></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1101</td>
+            <td>Compra para industrialização ou produção rural</td>
+            <td>00</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+          </tr>
+          <tr>
+            <td colspan="3">TOTAIS</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <table class="margin-auto mt-6">
+        <tbody>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2" class="text-center">Valores</td>
+          </tr>
+          <tr>
+            <td class="text-center" colspan="2"><b>DÉBITO DO IMPOSTO</b></td>
+            <td >Coluna Auxiliar</td>
+            <td >Soma</td>
+          </tr>
+          <tr>
+            <td>001</td>
+            <td>POR SAÍDAS /PRESTAÇÕES COM DÉBITO DO IMPOSTO</td>
+            <td >R$ 100</td>
+            <td>R$ 100</td>
+          </tr>
+          <tr>
+            <td class="text-center" colspan="2"><b>CRÉDITO DO IMPOSTO</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>005</td>
+            <td>POR ENTRADAS/AQUISIÇÕES COM CRÉDITO DO IMPOSTO</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+          </tr>
+          <tr>
+            <td class="text-center" colspan="2"><b>APURAÇÃO DO SALDO</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>011</td>
+            <td>SALDO DEVEDOR (DÉBITO MENOS CRÉDITO)</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

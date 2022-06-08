@@ -36,15 +36,15 @@ let students = [{
 }];
 
 app.get("/generateReport", (req, res) => {
-    ejs.renderFile(path.join(__dirname, './pdf/', "report-template.ejs"), {
+    ejs.renderFile(path.join(__dirname, './pdf/', "report.ejs"), {
         students: students
     }, (err, data) => {
         if (err) {
             res.send(err);
         } else {
             let options = {
-                "height": "11.25in",
-                "width": "8.5in",
+                "height": "20.25in",
+                "width": "20.5in",
                 "header": {
                     "height": "20mm",
                 },
