@@ -1,0 +1,4 @@
+### GetAll report
+
+GET http://localhost:3000/generateReport 
+Content-Type: application/json
